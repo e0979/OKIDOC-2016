@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/baseContainer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/noContent">
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/LogoImage"
+            android:src="@drawable/okidoc_logo_main"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_practices_1"
+            android:id="@+id/resultsMessage"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/LogoImage"
+            android:textColor="#4E94F5"
+            android:textSize="@dimen/text_message_big"
+            android:layout_marginBottom="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_practices_2"
+            android:id="@+id/sugestion"
+            android:layout_below="@+id/resultsMessage"
+            android:textColor="@color/okidoc_gray"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/add_practice_button"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="Agregar Práctica"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"
+            android:layout_below="@+id/resultsMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="40sp"
+            android:textAllCaps="true"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

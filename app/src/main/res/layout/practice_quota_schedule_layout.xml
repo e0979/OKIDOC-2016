@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/quota_per_day">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Quota_hintText">
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"
+            android:text="DIA"
+            android:id="@+id/Quota_hint1" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAX PERSONAS"
+            android:textAlignment="center"
+            android:id="@+id/Quota_hint2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintText"
+        android:id="@+id/Quota_layoutDay1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MON"
+            android:id="@+id/Quota_day_1"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Quota_1"
+            android:inputType="time"
+            android:hint="personas"
+            android:layout_toRightOf="@+id/Quota_day_1"
+            android:layout_toEndOf="@+id/Quota_day_1"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:layout_gravity="right" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintText"
+        android:id="@+id/Quota_layoutDay2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/TUE"
+            android:id="@+id/Quota_day_2"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Quota_2"
+            android:inputType="time"
+            android:hint="personas"
+            android:layout_toRightOf="@+id/Quota_day_1"
+            android:layout_toEndOf="@+id/Quota_day_1"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:layout_gravity="right" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintText"
+        android:id="@+id/Quota_layoutDay3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/WED"
+            android:id="@+id/Quota_day_3"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Quota_3"
+            android:inputType="time"
+            android:hint="personas"
+            android:layout_toRightOf="@+id/Quota_day_1"
+            android:layout_toEndOf="@+id/Quota_day_1"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:layout_gravity="right" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintText"
+        android:id="@+id/Quota_layoutDay4"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/THU"
+            android:id="@+id/Quota_day_4"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Quota_4"
+            android:inputType="time"
+            android:hint="personas"
+            android:layout_toRightOf="@+id/Quota_day_1"
+            android:layout_toEndOf="@+id/Quota_day_1"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:layout_gravity="right" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintText"
+        android:id="@+id/Quota_layoutDay5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/FRI"
+            android:id="@+id/Quota_day_5"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Quota_5"
+            android:inputType="time"
+            android:hint="personas"
+            android:layout_toRightOf="@+id/Quota_day_1"
+            android:layout_toEndOf="@+id/Quota_day_1"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:layout_gravity="right" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintText"
+        android:id="@+id/Quota_layoutDay6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/SAT"
+            android:id="@+id/Quota_day_6"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Quota_6"
+            android:inputType="time"
+            android:hint="personas"
+            android:layout_toRightOf="@+id/Quota_day_1"
+            android:layout_toEndOf="@+id/Quota_day_1"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:layout_gravity="right" />
+    </LinearLayout>
+</LinearLayout>

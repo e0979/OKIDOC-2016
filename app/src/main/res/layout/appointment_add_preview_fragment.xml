@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding="15sp"
+    android:background="@color/background_gray">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Confirme la información de la Cita"
+        android:id="@+id/question"
+        android:layout_marginBottom="@dimen/margin_bottom_form"
+        android:textAlignment="center" />
+    <Button
+        android:id="@+id/prevButtonStep"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:text=" Editar"
+        android:background="@drawable/button_blank"
+        android:textColor="@color/okidoc_gray"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom|left"
+        android:layout_below="@+id/question"
+        android:stateListAnimator="@null" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:elevation="5sp"
+        android:layout_margin="@dimen/margin_bottom_form"
+        android:padding="@dimen/margin_bottom_form"
+        android:layout_below="@+id/prevButtonStep"
+        android:layout_above="@+id/nextButtonStep"
+        android:layout_centerHorizontal="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/scrollView">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fitsSystemWindows="false">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fitsSystemWindows="true"
+                    android:id="@+id/appointmentPreview"
+                    android:visibility="invisible">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fecha"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/title1"
+                        android:layout_marginBottom="@dimen/margin_bottom_form">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:text="20"
+                            android:id="@+id/day"
+                            android:background="@drawable/circle_green"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/date_text_big"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="JUNIO"
+                            android:id="@+id/month"
+                            android:layout_toRightOf="@+id/day"
+                            android:layout_alignBottom="@+id/day"
+                            android:layout_alignTop="@+id/day"
+                            android:gravity="center|center_vertical"
+                            android:layout_marginLeft="@dimen/form_side_margin_input"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/date_text_big" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="2016"
+                            android:id="@+id/year"
+                            android:layout_toRightOf="@+id/month"
+                            android:layout_alignBottom="@+id/month"
+                            android:layout_alignTop="@+id/month"
+                            android:gravity="center|center_vertical"
+                            android:layout_marginLeft="@dimen/form_side_margin_input"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/date_text_big" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UBICACION"
+                        android:id="@+id/title2"
+                        android:textColor="@color/okidoc_title_blue"
+                        android:layout_below="@+id/fecha" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ubicacion"
+                        android:layout_below="@+id/title2"
+                        android:layout_marginTop="@dimen/margen_estandar"
+                        android:layout_centerHorizontal="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/horario1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Clinic Name"
+                                android:id="@+id/clinic_name"
+                                android:layout_alignParentLeft="false"
+                                android:layout_marginLeft="0dp"
+                                android:layout_alignParentTop="false"
+                                android:layout_marginTop="0dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Address Details"
+                                android:id="@+id/address_details"
+                                android:layout_alignParentLeft="false"
+                                android:layout_alignParentTop="false"
+                                android:layout_below="@+id/clinic_name" />
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PACIENTE"
+                        android:id="@+id/title3"
+                        android:textColor="@color/okidoc_title_blue"
+                        android:layout_below="@+id/ubicacion" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/paciente"
+                        android:layout_below="@+id/title3"
+                        android:layout_marginTop="@dimen/margen_estandar"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre Apellido"
+                            android:id="@+id/patient_fullname"
+                            android:layout_toRightOf="@+id/avatar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cedula"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/id_card"
+                            android:layout_below="@+id/patient_fullname"
+                            android:layout_toRightOf="@+id/avatar" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="email"
+                            android:layout_below="@+id/id_card"
+                            android:layout_toRightOf="@+id/avatar"
+                            android:id="@+id/email" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/avatar"
+                            android:background="@drawable/default_male"
+                            android:layout_marginRight="10dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FECHA"
+                        android:id="@+id/title1"
+                        android:textColor="@color/okidoc_title_blue"
+                        android:layout_marginBottom="@dimen/margin_bottom_form" />
+
+
+                </RelativeLayout>
+            </FrameLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/nextButtonStep"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:text="Crear Cita"
+        android:background="@drawable/button_green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_gravity="bottom|right"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

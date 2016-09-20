@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="4dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon"
+            android:src="@drawable/icon_patients"
+            android:layout_toLeftOf="@+id/title"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true"
+            android:text="Agregar Paciente"
+            android:textColor="@color/okidoc_title_blue"
+            android:textSize="30sp"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_bottom_form_title"
+            android:textAlignment="center"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+
+    <com.colmenadeideas.okidoc.includes.config.libs.utils.NoSwipeViewPager
+        android:id="@+id/stepsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+    </com.colmenadeideas.okidoc.includes.config.libs.utils.NoSwipeViewPager>
+    <!--
+     //Esta implementado el .NoSwipe para que solo puedan usar
+     //el form con los botones de next y prev
+     >-->
+</LinearLayout>

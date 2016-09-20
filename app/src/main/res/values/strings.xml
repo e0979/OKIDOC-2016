@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">OKIDOC</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="google_api_key">AIzaSyCZrOa5K7mow_tX5KP253wPifIs7qQ4y3k</string>
+
+
+
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <bool name="esTablet">false</bool>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </string>
+    <string name="title_activity_panel">PanelActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <string name="signin">Registrarse</string>
+    <string name="login">ENTRAR</string>
+    <string name="or_register">o Registrarme</string>
+    <string name="message_processing">Espere...</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+
+
+    <string name="title_activity_appointment_add">Agregar Cita</string>
+    <string name="title_activity_practice_add">Agregar Práctica</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="Practice_Add_q1">¿Está ubicado en una Clínica, Hospital o Centro Médico?</string>
+    <string name="Practice_Add_q2">Indique los días y horarios de su Consulta</string>
+    <string name="Practice_Add_q3">¿Con cuantos días de anticipación quieres permitir la reserva de citas?</string>
+    <string name="Practice_add_q5">Complete para agregar los formatos de su consulta</string>
+    <string name="previous">Anterior</string>
+    <string name="next">Continuar</string>
+    <string name="hint_hh_mm">hh:mm</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+
+    <string name="title_activity_login">Login</string>
+
+    <string name="ad_discover_more_patients">Descubre cómo conseguir más pacientes</string>
+    <string name="add_patient_today">¡Agregue un paciente hoy mismo!</string>
+    <string name="no_appointments">No se han encontrado Citas</string>
+    <string name="add_appointment">Agregar Cita</string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="fill_patient_data">Complete los siguentes datos:</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="no_practices_1">Aun no tienes Prácticas</string>
+    <string name="no_practices_2">Comienza agregando tu práctica para administrar citas</string>
+    <string name="pick_clinic">Seleccione una Clínica para trabajar</string>
+    <string name="no_conection_msg">Puede que tenga problemas de conexión, intente de nuevo</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="address">Dirección</string>
+    <string name="nombre_de_la_cl_nica_hospital">Nombre de la Clínica, Hospital...</string>
+    <string name="clinic_details">Piso, Consultorio...</string>
+    <string name="MON">LUN</string>
+    <string name="TUE">MAR</string>
+    <string name="WED">MIE</string>
+    <string name="THU">JUE</string>
+    <string name="FRI">VIE</string>
+    <string name="SAT">SAB</string>
+</resources>

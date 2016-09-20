@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_15">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/nextButtonStep">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/fill_patient_data"
+                android:id="@+id/question"
+                android:layout_marginBottom="@dimen/margin_bottom_form"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:text="Limpiar Datos"
+                android:background="@drawable/button_blank"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/question"
+                android:layout_marginBottom="@dimen/margin_bottom_form"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/clearButton">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/names"
+                    android:layout_marginBottom="@dimen/margin_bottom_form">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:hint="Nombre"
+                        android:nextFocusDown="@+id/lastname"
+                        android:nextFocusForward="@+id/lastname"
+                        android:singleLine="true"
+                        />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/patient_id"
+                        android:visibility="gone"
+                        android:layout_weight=".1"/>
+                    <AutoCompleteTextView
+                        android:id="@+id/lastname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:hint="Apellido"
+                        android:ems="10"
+                        android:singleLine="true"
+                        android:nextFocusDown="@+id/id_card"
+                        android:nextFocusForward="@+id/id_card"/>
+
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear2"
+                    android:layout_below="@+id/names"
+                    android:layout_marginBottom="@dimen/margin_bottom_form">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/id_card"
+                        android:hint="Cédula"
+                        android:inputType="text"
+                        android:layout_weight=".50"
+                        android:nextFocusDown="@+id/birth"
+                        android:nextFocusForward="@+id/birth"
+                         />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/birth"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="true"
+                        android:hint="Fecha de Nacimiento"
+                        android:singleLine="true"
+                        android:inputType="date"
+                        android:nextFocusDown="@+id/cellphone"
+                        android:nextFocusForward="@+id/cellphone"
+                        android:layout_weight=".50"/>
+                    </LinearLayout>
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/cellphone"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linear2"
+                    android:hint="Teléfono Móvil"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/phone"
+                    android:nextFocusForward="@+id/phone"
+                    android:inputType="phone" />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/phone"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/cellphone"
+                    android:singleLine="true"
+                    android:hint="Teléfono Habitación"
+                    android:inputType="phone"
+                    android:nextFocusDown="@+id/email"
+                    android:nextFocusForward="@+id/email"
+                    android:layout_marginBottom="@dimen/margin_bottom_form" />
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/email"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="true"
+                    android:singleLine="true"
+                    android:layout_below="@+id/phone"
+                    android:hint="Email"
+
+                    android:nextFocusForward="@+id/nextButtonStep"
+                    android:nextFocusDown="@+id/nextButtonStep"
+                    android:inputType="textEmailAddress" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/prevButtonStep"
+        android:layout_width="@dimen/button_next_prev_size"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/nextButtonStep"
+        android:layout_width="@dimen/button_next_prev_size"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:enabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

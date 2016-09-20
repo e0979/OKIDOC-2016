@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_15">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/fill_patient_data"
+        android:id="@+id/question"
+        android:layout_marginBottom="@dimen/margin_bottom_form"
+        android:textAlignment="center" />
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:text="SALTAR PASO"
+        android:background="@drawable/button_blank"
+        android:textColor="@color/fifty_white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/question"
+        android:layout_marginBottom="@dimen/margin_bottom_form"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15" />
+    <Button
+        android:id="@+id/prevButtonStep"
+        android:layout_width="@dimen/button_next_prev_size"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/nextButtonStep"
+        android:layout_width="@dimen/button_next_prev_size"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/skipButton"
+        android:layout_above="@+id/prevButtonStep">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Edad"
+                    android:layout_weight=".33" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Estatura"
+                    android:layout_weight=".33" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Peso"
+                    android:layout_weight=".33" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear3"
+                android:layout_marginTop="@dimen/margin_bottom_form"
+                android:layout_marginBottom="@dimen/margin_bottom_form">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:hint="años"
+                    android:inputType="number"
+                    android:id="@+id/age"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:hint="1,73 mts"
+                    android:inputType="number"
+                    android:id="@+id/height"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:hint="kg"
+                    android:inputType="number"
+                    android:id="@+id/weight"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear3"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear3"
+                android:id="@+id/linear4"
+                android:layout_marginTop="@dimen/margin_bottom_form">
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/gender">
+                    <RadioButton android:id="@+id/gender1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"/>
+                    <RadioButton android:id="@+id/gender2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear4"
+                android:id="@+id/linear5"
+                android:layout_marginTop="@dimen/margin_bottom_form">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Sangre" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear5"
+                android:id="@+id/linear6"
+                android:layout_marginTop="@dimen/margin_bottom_form">
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/blood_type">
+                    <RadioButton android:id="@+id/blood_type1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"/>
+                    <RadioButton android:id="@+id/blood_type2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"/>
+                    <RadioButton android:id="@+id/blood_type3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AB"/>
+                    <RadioButton android:id="@+id/blood_type4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O"/>
+                </RadioGroup>
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/blood_symbol">
+                    <RadioButton android:id="@+id/blood_symbol1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"/>
+                    <RadioButton android:id="@+id/blood_symbol2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

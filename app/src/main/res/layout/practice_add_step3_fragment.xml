@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_15">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/Practice_Add_q3"
+        android:id="@+id/question"
+        android:layout_marginBottom="@dimen/margin_bottom_form"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/prevButtonStep"
+        android:layout_width="@dimen/button_next_prev_size"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/nextButtonStep"
+        android:layout_width="@dimen/button_next_prev_size"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/daysAheadlayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasta "
+            android:layout_marginRight="@dimen/form_side_margin_input"/>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/max_days_ahead"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:baselineAligned="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="días"
+            android:layout_gravity="top" />
+    </LinearLayout>
+
+</RelativeLayout>

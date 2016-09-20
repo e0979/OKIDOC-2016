@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/padding_15">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="¿Qué día quiere asignar la cita?"
+        android:id="@+id/question"
+        android:layout_marginBottom="@dimen/margin_bottom_form"
+        android:textAlignment="center" />
+    <Button
+        android:id="@+id/prevButtonStep"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Práctica"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/nextButtonStep"
+        android:layout_width="@dimen/button_next_prev_size"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/nextButtonStep"
+            android:layout_below="@+id/question">
+
+                <com.colmenadeideas.okidoc.includes.config.libs.utils.CalendarView
+                    android:id="@+id/calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top" />
+        </ScrollView>
+</RelativeLayout>

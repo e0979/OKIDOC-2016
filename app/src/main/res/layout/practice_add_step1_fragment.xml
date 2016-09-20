@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_15">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/Practice_Add_q1"
+            android:layout_below="@+id/title1"
+            android:id="@+id/question1"
+            android:layout_marginBottom="@dimen/margin_bottom_form"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/isclinic"
+            android:layout_below="@+id/question1">
+            <RadioButton android:id="@+id/isclinic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"/>
+            <RadioButton android:id="@+id/isclinic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/isclinic"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/clinicAddress"
+            android:visibility="gone">
+
+            <AutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clinic"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/nombre_de_la_cl_nica_hospital"
+                android:nextFocusDown="@+id/clinic_details"
+                android:layout_marginBottom="@dimen/margin_bottom_form"
+                android:contextClickable="false"
+                android:singleLine="true" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/clinic_details"
+                android:nextFocusDown="@+id/nextButtonStep"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:inputType="text"
+                android:hint="@string/clinic_details"
+                android:layout_below="@+id/clinic"
+                android:layout_marginBottom="@dimen/margin_bottom_form" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/clinic_address"
+                android:inputType="text"
+                android:layout_below="@+id/clinic"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clinicAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:id="@+id/regularAddress"
+            android:visibility="gone">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/address"
+                android:nextFocusDown="@+id/nextButtonStep"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/address" />
+        </RelativeLayout>
+
+        <Button
+        android:id="@+id/nextButtonStep"
+        android:layout_width="@dimen/button_next_prev_size"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/button_cyan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

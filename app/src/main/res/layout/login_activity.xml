@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+
+    <TextView
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_register"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/fifty_white" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/search_button"
+        android:layout_alignLeft="@+id/field_password"
+        android:layout_alignRight="@+id/field_password"
+        android:text="@string/login"
+        android:background="@drawable/button_green"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/field_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:layout_marginBottom="15sp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:nextFocusForward="@id/login_button">
+
+        <requestFocus />
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/field_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/username"
+        android:layout_above="@+id/field_password"
+        android:layout_marginBottom="10sp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:nextFocusDown="@id/field_password"
+        android:nextFocusForward="@id/field_password"
+        android:singleLine="true" />
+
+    <!--  Error message -->
+
+    <ImageView
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/okidoc_logo_main_square_full_white"
+        android:layout_marginTop="60sp"
+        android:layout_marginBottom="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/field_username" />
+
+</RelativeLayout>
+

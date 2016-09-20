@@ -1,0 +1,52 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* aidl/
+* aidl/ILicenseResultListener.aidl
+* aidl/ILicensingService.aidl
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => library/src/main/AndroidManifest.xml
+* res/ => library/src/main/res
+* src/ => library/src/main/java/
+* src/.DS_Store => library/src/main/resources/.DS_Store
+* src/com/.DS_Store => library/src/main/resources/com/.DS_Store
+* src/com/.idea/.name => library/src/main/resources/com/.idea/.name
+* src/com/.idea/compiler.xml => library/src/main/resources/com/.idea/compiler.xml
+* src/com/.idea/copyright/profiles_settings.xml => library/src/main/resources/com/.idea/copyright/profiles_settings.xml
+* src/com/.idea/encodings.xml => library/src/main/resources/com/.idea/encodings.xml
+* src/com/.idea/misc.xml => library/src/main/resources/com/.idea/misc.xml
+* src/com/.idea/modules.xml => library/src/main/resources/com/.idea/modules.xml
+* src/com/.idea/scopes/scope_settings.xml => library/src/main/resources/com/.idea/scopes/scope_settings.xml
+* src/com/.idea/vcs.xml => library/src/main/resources/com/.idea/vcs.xml
+* src/com/.idea/workspace.xml => library/src/main/resources/com/.idea/workspace.xml
+* src/com/com.iml => library/src/main/resources/com/com.iml
+* src/com/google/.DS_Store => library/src/main/resources/com/google/.DS_Store
+* src/com/google/android/.DS_Store => library/src/main/resources/com/google/android/.DS_Store
+* src/com/google/android/vending/.DS_Store => library/src/main/resources/com/google/android/vending/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/okidoc_blue</color>
+    <color name="colorPrimaryDark">@color/okidoc_bluegray</color>
+    <color name="colorAccent">@color/okidoc_green</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="fifty_white">#55ffffff</color>
+
+    <color name="okidoc_blue">#4884FF</color> <!--4E94F5-->
+    <color name="okidoc_darkblue">#2C72BD</color>
+    <color name="okidoc_green">#1CD6BD</color>
+    <color name="okidoc_green_darker">#15ac84</color>
+    <color name="okidoc_gray">#777777</color>
+    <color name="okidoc_bluegray">#525c6d</color>
+    <color name="okidoc_bluegray_darker">#3d4654</color>
+    <color name="background_gray">#f4f7f7</color>
+
+    <color name="okidoc_lightgray">#bababa</color>
+    <color name="okidoc_title_blue">#4E92F6</color>
+
+    <color name="okidoc_button_add_panel">#3ED87A</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_semi_transparent">#B2000000</color>
+
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- calendar -->
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+
+
+</resources>

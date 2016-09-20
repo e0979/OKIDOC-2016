@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="4dip" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:text="Agregar Práctica"
+        android:textColor="@color/okidoc_title_blue"
+        android:textSize="30sp"
+        android:layout_gravity="top"
+        android:gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_bottom_form_title" />
+
+
+    <com.colmenadeideas.okidoc.includes.config.libs.utils.NoSwipeViewPager
+        android:id="@+id/stepsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+    </com.colmenadeideas.okidoc.includes.config.libs.utils.NoSwipeViewPager>
+   <!--
+    //Esta implementado el .NoSwipe para que las personas solo puedan usar
+    //el form con los botones de next y prev- Funciona tambien
+    //con el codigo abajo v4. ViewPager
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/stepsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp" />
+    </android.support.v4.view.ViewPager>-->
+</LinearLayout>

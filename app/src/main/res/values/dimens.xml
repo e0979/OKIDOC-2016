@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">10dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="margen_estandar">16dp</dimen>
+    <dimen name="altura_item">122dp</dimen>
+    <dimen name="margen_izquierda_contenido">72dp</dimen>
+    <dimen name="ancho_miniatura">120dp</dimen>
+    <dimen name="ancho_panel_lista">512dp</dimen>
+    <dimen name="margin_bottom_form">15sp</dimen>
+    <dimen name="margin_bottom_form_title">20sp</dimen>
+    <dimen name="form_side_margin_input">5sp</dimen>
+    <dimen name="form_bigger_side_margin_input">15sp</dimen>
+    <dimen name="button_next_prev_size">100sp</dimen>
+    <dimen name="button_text_size">12sp</dimen>
+    <dimen name="text_message_big">20sp</dimen>
+    <dimen name="text_message_regular">15sp</dimen>
+    <dimen name="text_message_small">10sp</dimen>
+
+    <dimen name="circles_size">80dp</dimen>
+    <dimen name="circles_size_smaller">50dp</dimen>
+    <dimen name="date_text_big">30sp</dimen>
+    <dimen name="date_text_small">15sp</dimen>
+    <dimen name="name_text_small">10sp</dimen>
+
+
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">45dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="image_small_width">32dp</dimen>
+
+    <dimen name="profile_data_title">10sp</dimen>
+    <dimen name="profile_data_info">15sp</dimen>
+    <dimen name="profile_data_width">100sp</dimen>
+    <dimen name="profile_data_padding">7sp</dimen>
+    <dimen name="padding_15">15sp</dimen>
+    <dimen name="size_14sp">14sp</dimen>
+    <dimen name="size_12sp">12sp</dimen>
+    <dimen name="size11sp">11sp</dimen>
+    <dimen name="size_10sp">10sp</dimen>
+    <dimen name="calendar_small">9sp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="dimen_15sp">15sp</dimen>
+    <dimen name="image_space">40dp</dimen>
+
+
+</resources>

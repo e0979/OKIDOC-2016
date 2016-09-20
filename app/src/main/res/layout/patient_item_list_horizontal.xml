@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:id="@+id/avatar"
+            android:background="@drawable/default_male"
+            android:layout_alignParentRight="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/openButton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Apellido"
+                android:textSize="@dimen/size_14sp"
+                android:id="@+id/patientName"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/okidoc_bluegray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00am/pm"
+                android:textSize="@dimen/size11sp"
+                android:id="@+id/appointmentTime"
+                android:layout_below="@+id/patientName" />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/openButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:text="VER"
+            android:background="@drawable/button_border_gray"
+            android:textColor="@color/okidoc_gray"
+            android:textSize="@dimen/button_text_size"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:layout_marginLeft="7sp"
+            android:layout_marginRight="@dimen/margin_bottom_form"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hintText"
+        android:layout_below="@+id/question">
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"
+            android:text="DIA"
+            android:id="@+id/hint1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="DESDE"
+            android:id="@+id/hint2"
+            android:layout_marginRight="@dimen/form_side_margin_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HASTA"
+            android:textAlignment="center"
+            android:id="@+id/hint3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintText"
+        android:id="@+id/layoutDay1">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LUN"
+            android:id="@+id/day_1"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ini_schedule_1"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:layout_below="@+id/question"
+            android:layout_toRightOf="@+id/day_1"
+            android:layout_toEndOf="@+id/day_1"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:id="@+id/end_schedule_1"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutDay1"
+        android:id="@+id/layoutDay2">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MAR"
+            android:id="@+id/day_2"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ini_schedule_2"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:layout_toRightOf="@+id/day_2"
+            android:layout_toEndOf="@+id/day_2"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:id="@+id/end_schedule_2"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutDay2"
+        android:id="@+id/layoutDay3">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MIE"
+            android:id="@+id/day_3"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ini_schedule_3"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:layout_toRightOf="@+id/day_3"
+            android:layout_toEndOf="@+id/day_3"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:id="@+id/end_schedule_3"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutDay3"
+        android:id="@+id/layoutDay4">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="JUE"
+            android:id="@+id/day_4"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ini_schedule_4"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:layout_toRightOf="@+id/day_4"
+            android:layout_toEndOf="@+id/day_4"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:id="@+id/end_schedule_4"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutDay4"
+        android:id="@+id/layoutDay5">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIE"
+            android:id="@+id/day_5"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ini_schedule_5"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:layout_toRightOf="@+id/day_5"
+            android:layout_toEndOf="@+id/day_5"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:id="@+id/end_schedule_5"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutDay5"
+        android:id="@+id/layoutDay6">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAB"
+            android:id="@+id/day_6"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ini_schedule_6"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:layout_toRightOf="@+id/day_6"
+            android:layout_toEndOf="@+id/day_6"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:id="@+id/end_schedule_6"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutDay6"
+        android:id="@+id/layoutDay7">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DOM"
+            android:id="@+id/day_7"
+            android:layout_marginRight="@dimen/form_bigger_side_margin_input"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ini_schedule_7"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:layout_toRightOf="@+id/day_7"
+            android:layout_toEndOf="@+id/day_7"
+            android:layout_marginRight="@dimen/form_side_margin_input"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:hint="@string/hint_hh_mm"
+            android:id="@+id/end_schedule_7"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>
